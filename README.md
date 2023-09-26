@@ -41,8 +41,13 @@
 
 * 在 @ConfigurationProperties bean 上添加注解 `@ApolloConfigRefresh`，开启配置热更新
 
-
 ## 原理
+
+* 参考核心类：[ApolloConfigRefresh.java](src%2Fmain%2Fjava%2Fcom%2Fizachwei%2Fapolloconfig%2Fautoconfig%2FApolloConfigRefresh.java)
+
+1. 利用`BeanPostProcessor`后置处理器收集打上`@ApolloConfigRefresh`的配置类，缓存在`apolloConfigCache`(key:prefix,value:
+   beanName)
+2. `@ApolloConfigChangeListener` 监听 Apollo 配置的变更，通过 `apolloConfigCache` 获取对应的bean，最后使用`refreshScope.refresh()`刷新配置bean。
 
 ```html
 apollo update key -> ApolloConfigChangeListener -> apolloConfigCache.get(configKey) -> refreshScope.refresh()
