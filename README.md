@@ -39,7 +39,7 @@
 </dependency>
 ```
 
-* 在 @ConfigurationProperties bean 上添加注解 `@ApolloConfigRefresh`，开启配置热更新
+* 在 @ConfigurationProperties bean 上添加注解 `@ApolloConfigRefresh`，开启配置热更新。
 
 ## 原理
 
