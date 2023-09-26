@@ -8,7 +8,7 @@
     <artifactId>apollo-config-spring-boot-starter</artifactId>
     <version>1.0.0-RELEASE</version>
     <name>apollo-config-spring-boot-starter</name>
-    <url>https://github.com/izachwei/easy-cacheo</url>
+    <url>https://github.com/izachwei/apollo-config-spring-boot-starter</url>
     <description>用于解决 Apollo 配置中心使用 @ConfigurationProperties 配置实时更新失败</description>
     <packaging>pom</packaging>
 
