@@ -7,10 +7,10 @@
         <img src="https://img.shields.io/badge/JDK-1.8+-green.svg" >
     </a>
     <a>
-        <img src="https://img.shields.io/badge/springBoot-2.2.5.RELEASE-green.svg" >
+        <img src="https://img.shields.io/badge/SpringBoot-2.2.5.RELEASE-green.svg" >
     </a>
 <a>
-        <img src="https://img.shields.io/badge/springCloud-Hoxton.SR3-green.svg" >
+        <img src="https://img.shields.io/badge/SpringCloud-Hoxton.SR3-green.svg" >
     </a>
     <a href="https://www.jetbrains.com">
         <img src="https://img.shields.io/badge/IntelliJ%20IDEA-support-blue.svg" >
