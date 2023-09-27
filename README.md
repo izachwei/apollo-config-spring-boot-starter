@@ -24,7 +24,7 @@
 
 ## 介绍
 
-用于解决 Apollo 配置中心使用 @ConfigurationProperties 配置实时更新失败
+用于解决 Apollo 配置中心使用 @ConfigurationProperties 时无法实时更新配置。
 
 ## 使用说明
 
