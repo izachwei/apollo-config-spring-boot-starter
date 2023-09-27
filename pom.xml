@@ -6,11 +6,10 @@
 
     <groupId>io.github.izachwei</groupId>
     <artifactId>apollo-config-spring-boot-starter</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-RELEASE</version>
     <name>apollo-config-spring-boot-starter</name>
     <url>https://github.com/izachwei/apollo-config-spring-boot-starter</url>
     <description>用于解决 Apollo 配置中心使用 @ConfigurationProperties 配置实时更新失败</description>
-    <packaging>pom</packaging>
 
     <properties>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
@@ -19,7 +18,21 @@
         <groovy.version>3.0.7</groovy.version>
         <project.version>1.0.1-RELEASE</project.version>
         <apollo-version>1.6.0</apollo-version>
+        <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+        <java-compiler.version>1.8</java-compiler.version>
     </properties>
+
+    <developers>
+        <developer>
+            <name>izachwei</name>
+            <id>izachwei</id>
+            <email>936933494@qq.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
 
     <licenses>
         <license>
@@ -102,6 +115,16 @@
     </profiles>
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${java-compiler.version}</source>
+                    <target>${java-compiler.version}</target>
+
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
