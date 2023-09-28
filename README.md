@@ -35,7 +35,7 @@
 <dependency>
     <groupId>io.github.izachwei</groupId>
     <artifactId>apollo-config-spring-boot-starter</artifactId>
-    <version>1.0.1-RELEASE</version>
+    <version>1.0.2-RELEASE</version>
 </dependency>
 ```
 
