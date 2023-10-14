@@ -6,7 +6,7 @@
 
     <groupId>io.github.izachwei</groupId>
     <artifactId>apollo-config-spring-boot-starter</artifactId>
-    <version>1.0.3-RELEASE</version>
+    <version>${project.version}</version>
     <name>apollo-config-spring-boot-starter</name>
     <url>https://github.com/izachwei/apollo-config-spring-boot-starter</url>
     <description>用于解决 Apollo 配置中心使用 @ConfigurationProperties 配置实时更新失败</description>
@@ -16,7 +16,7 @@
         <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
         <apache.commons.version>3.4</apache.commons.version>
         <groovy.version>3.0.7</groovy.version>
-        <project.version>1.0.3-RELEASE</project.version>
+        <project.version>1.0.4-RELEASE</project.version>
         <apollo-version>1.6.0</apollo-version>
         <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
@@ -50,14 +50,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.ctrip.framework.apollo</groupId>
             <artifactId>apollo-client</artifactId>
+            <optional>true</optional>
         </dependency>
 
     </dependencies>
@@ -69,7 +72,6 @@
                 <groupId>com.ctrip.framework.apollo</groupId>
                 <artifactId>apollo-client</artifactId>
                 <version>${apollo-version}</version>
-                <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -77,7 +79,6 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-                <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -85,13 +86,11 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-                <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>${spring-boot.version}</version>
-                <optional>true</optional>
             </dependency>
         </dependencies>
     </dependencyManagement>
